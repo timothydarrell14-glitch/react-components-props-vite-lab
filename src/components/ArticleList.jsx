@@ -1,9 +1,11 @@
 import React from "react";
 
 function List(){
-    <main>
+    return(
+        <main>
         
     </main>
+    )
 }
 
 export default List 

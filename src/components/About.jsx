@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 
 function About(prop){
     return (
         <aside>
-            <img alt={prop.alt} src={prop.image} ></img>
+            <img src={prop.image} alt="blog logo"></img>
             <p>{prop.text}</p>
         </aside>
     )

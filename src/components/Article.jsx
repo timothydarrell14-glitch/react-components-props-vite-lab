@@ -1,5 +1,4 @@
 import React from "react";
-
 function Article(prop) {
 
     prop.post.forEach(() => {

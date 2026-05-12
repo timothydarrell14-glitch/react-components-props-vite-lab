@@ -1,17 +1,17 @@
-import React from "react";
+// import React from "react";
 function Article(prop) {
 
-    prop.post.forEach(() => {
+    let date = "January 1, 1970"
 
         return (
-            <article id={prop.post.id}>
-                <h3>{prop.post.title}</h3>
-                <small>{prop.post.date}</small>
-                <p>{prop.post.preview}</p>
+            <article key={prop.index} >
+                <h3>{prop.title}</h3>
+                <small>{prop.date || date}</small>
+                <p>{prop.preview}</p><small>{prop.minutes} minutes</small>
+
+                
             </article>
         )
-
-    })
 }
 
 export default Article

@@ -1,9 +1,13 @@
-import React from "react";
+// import React from "react";
+import Article from "./Article"
 
-function List(){
+function List(prop){
+
     return(
         <main>
-        
+        {prop.posts.map((post, index) => (
+            <Article key={index} date={post.date} title={post.title} preview={post.preview} minutes={post.minutes}   />
+        ))}
     </main>
     )
 }
